@@ -45,6 +45,7 @@
 		900EE65B1CADC4B6004AF16A /* Info-watchOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-watchOS.plist"; sourceTree = "<group>"; };
 		900EE6641CADC539004AF16A /* ColorizeSwift_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ColorizeSwift_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		900EE6B71CAE4E9C004AF16A /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		900EE6B91CAE6886004AF16A /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +91,7 @@
 		900EE5E21CADBEDB004AF16A = {
 			isa = PBXGroup;
 			children = (
+				900EE6B91CAE6886004AF16A /* Package.swift */,
 				900EE6B61CAE4E9C004AF16A /* Example */,
 				900EE6061CADBFC5004AF16A /* Source */,
 				900EE5FA1CADBEDB004AF16A /* ColorizeSwiftTests */,
@@ -651,7 +653,7 @@
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
@@ -671,7 +673,7 @@
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
