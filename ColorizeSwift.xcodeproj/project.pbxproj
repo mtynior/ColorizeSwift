@@ -8,19 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		900EE5F71CADBEDB004AF16A /* ColorizeSwift_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 900EE5EC1CADBEDB004AF16A /* ColorizeSwift_iOS.framework */; };
-		900EE5FC1CADBEDB004AF16A /* ColorizeSwift_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900EE5FB1CADBEDB004AF16A /* ColorizeSwift_iOSTests.swift */; };
+		900EE5FC1CADBEDB004AF16A /* ColorizeSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900EE5FB1CADBEDB004AF16A /* ColorizeSwiftTests.swift */; };
 		900EE60A1CADBFC5004AF16A /* ColorizeSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 900EE6071CADBFC5004AF16A /* ColorizeSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		900EE60B1CADBFC5004AF16A /* ColorizeSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900EE6081CADBFC5004AF16A /* ColorizeSwift.swift */; };
-		900EE61D1CADC2D9004AF16A /* ColorizeSwift_OSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 900EE6131CADC2D9004AF16A /* ColorizeSwift_OSX.framework */; };
 		900EE62A1CADC2F6004AF16A /* ColorizeSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900EE6081CADBFC5004AF16A /* ColorizeSwift.swift */; };
-		900EE6481CADC346004AF16A /* ColorizeSwift_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 900EE63E1CADC346004AF16A /* ColorizeSwift_tvOS.framework */; };
 		900EE6551CADC351004AF16A /* ColorizeSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900EE6081CADBFC5004AF16A /* ColorizeSwift.swift */; };
 		900EE6561CADC381004AF16A /* ColorizeSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 900EE6071CADBFC5004AF16A /* ColorizeSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		900EE6581CADC3A9004AF16A /* ColorizeSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 900EE6071CADBFC5004AF16A /* ColorizeSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		900EE66C1CADC556004AF16A /* ColorizeSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900EE6081CADBFC5004AF16A /* ColorizeSwift.swift */; };
 		900EE66D1CADC560004AF16A /* ColorizeSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 900EE6071CADBFC5004AF16A /* ColorizeSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		900EE6701CADC62C004AF16A /* ColorizeSwift_OSXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900EE66E1CADC62C004AF16A /* ColorizeSwift_OSXTests.swift */; };
-		900EE6711CADC62C004AF16A /* ColorizeSwift_tvOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900EE66F1CADC62C004AF16A /* ColorizeSwift_tvOSTests.swift */; };
+		900EE6B81CAE4E9C004AF16A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900EE6B71CAE4E9C004AF16A /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,40 +28,23 @@
 			remoteGlobalIDString = 900EE5EB1CADBEDB004AF16A;
 			remoteInfo = ColorizeSwift;
 		};
-		900EE61E1CADC2D9004AF16A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 900EE5E31CADBEDB004AF16A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 900EE6121CADC2D9004AF16A;
-			remoteInfo = ColorizeSwift_OSX;
-		};
-		900EE6491CADC346004AF16A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 900EE5E31CADBEDB004AF16A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 900EE63D1CADC346004AF16A;
-			remoteInfo = ColorizeSwift_tvOS;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		900EE5EC1CADBEDB004AF16A /* ColorizeSwift_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ColorizeSwift_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		900EE5F61CADBEDB004AF16A /* ColorizeSwift_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorizeSwift_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		900EE5FB1CADBEDB004AF16A /* ColorizeSwift_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorizeSwift_iOSTests.swift; sourceTree = "<group>"; };
+		900EE5FB1CADBEDB004AF16A /* ColorizeSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorizeSwiftTests.swift; sourceTree = "<group>"; };
 		900EE5FD1CADBEDB004AF16A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		900EE6071CADBFC5004AF16A /* ColorizeSwift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorizeSwift.h; sourceTree = "<group>"; };
 		900EE6081CADBFC5004AF16A /* ColorizeSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorizeSwift.swift; sourceTree = "<group>"; };
 		900EE6091CADBFC5004AF16A /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
 		900EE6131CADC2D9004AF16A /* ColorizeSwift_OSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ColorizeSwift_OSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		900EE61C1CADC2D9004AF16A /* ColorizeSwift_OSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorizeSwift_OSXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		900EE63E1CADC346004AF16A /* ColorizeSwift_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ColorizeSwift_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		900EE6471CADC346004AF16A /* ColorizeSwift_tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorizeSwift_tvOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		900EE6591CADC4B6004AF16A /* Info-OSX.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-OSX.plist"; sourceTree = "<group>"; };
 		900EE65A1CADC4B6004AF16A /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
 		900EE65B1CADC4B6004AF16A /* Info-watchOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-watchOS.plist"; sourceTree = "<group>"; };
 		900EE6641CADC539004AF16A /* ColorizeSwift_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ColorizeSwift_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		900EE66E1CADC62C004AF16A /* ColorizeSwift_OSXTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorizeSwift_OSXTests.swift; sourceTree = "<group>"; };
-		900EE66F1CADC62C004AF16A /* ColorizeSwift_tvOSTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorizeSwift_tvOSTests.swift; sourceTree = "<group>"; };
+		900EE6B71CAE4E9C004AF16A /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,26 +70,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		900EE6191CADC2D9004AF16A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				900EE61D1CADC2D9004AF16A /* ColorizeSwift_OSX.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		900EE63A1CADC346004AF16A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		900EE6441CADC346004AF16A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				900EE6481CADC346004AF16A /* ColorizeSwift_tvOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,6 +90,7 @@
 		900EE5E21CADBEDB004AF16A = {
 			isa = PBXGroup;
 			children = (
+				900EE6B61CAE4E9C004AF16A /* Example */,
 				900EE6061CADBFC5004AF16A /* Source */,
 				900EE5FA1CADBEDB004AF16A /* ColorizeSwiftTests */,
 				900EE5ED1CADBEDB004AF16A /* Products */,
@@ -138,9 +103,7 @@
 				900EE5EC1CADBEDB004AF16A /* ColorizeSwift_iOS.framework */,
 				900EE5F61CADBEDB004AF16A /* ColorizeSwift_iOSTests.xctest */,
 				900EE6131CADC2D9004AF16A /* ColorizeSwift_OSX.framework */,
-				900EE61C1CADC2D9004AF16A /* ColorizeSwift_OSXTests.xctest */,
 				900EE63E1CADC346004AF16A /* ColorizeSwift_tvOS.framework */,
-				900EE6471CADC346004AF16A /* ColorizeSwift_tvOSTests.xctest */,
 				900EE6641CADC539004AF16A /* ColorizeSwift_watchOS.framework */,
 			);
 			name = Products;
@@ -149,9 +112,7 @@
 		900EE5FA1CADBEDB004AF16A /* ColorizeSwiftTests */ = {
 			isa = PBXGroup;
 			children = (
-				900EE66E1CADC62C004AF16A /* ColorizeSwift_OSXTests.swift */,
-				900EE66F1CADC62C004AF16A /* ColorizeSwift_tvOSTests.swift */,
-				900EE5FB1CADBEDB004AF16A /* ColorizeSwift_iOSTests.swift */,
+				900EE5FB1CADBEDB004AF16A /* ColorizeSwiftTests.swift */,
 				900EE5FD1CADBEDB004AF16A /* Info.plist */,
 			);
 			path = ColorizeSwiftTests;
@@ -168,6 +129,14 @@
 				900EE6081CADBFC5004AF16A /* ColorizeSwift.swift */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		900EE6B61CAE4E9C004AF16A /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				900EE6B71CAE4E9C004AF16A /* main.swift */,
+			);
+			path = Example;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,24 +231,6 @@
 			productReference = 900EE6131CADC2D9004AF16A /* ColorizeSwift_OSX.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		900EE61B1CADC2D9004AF16A /* ColorizeSwift_OSXTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 900EE6271CADC2D9004AF16A /* Build configuration list for PBXNativeTarget "ColorizeSwift_OSXTests" */;
-			buildPhases = (
-				900EE6181CADC2D9004AF16A /* Sources */,
-				900EE6191CADC2D9004AF16A /* Frameworks */,
-				900EE61A1CADC2D9004AF16A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				900EE61F1CADC2D9004AF16A /* PBXTargetDependency */,
-			);
-			name = ColorizeSwift_OSXTests;
-			productName = ColorizeSwift_OSXTests;
-			productReference = 900EE61C1CADC2D9004AF16A /* ColorizeSwift_OSXTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		900EE63D1CADC346004AF16A /* ColorizeSwift_tvOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 900EE64F1CADC346004AF16A /* Build configuration list for PBXNativeTarget "ColorizeSwift_tvOS" */;
@@ -297,24 +248,6 @@
 			productName = ColorizeSwift_tvOS;
 			productReference = 900EE63E1CADC346004AF16A /* ColorizeSwift_tvOS.framework */;
 			productType = "com.apple.product-type.framework";
-		};
-		900EE6461CADC346004AF16A /* ColorizeSwift_tvOSTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 900EE6521CADC346004AF16A /* Build configuration list for PBXNativeTarget "ColorizeSwift_tvOSTests" */;
-			buildPhases = (
-				900EE6431CADC346004AF16A /* Sources */,
-				900EE6441CADC346004AF16A /* Frameworks */,
-				900EE6451CADC346004AF16A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				900EE64A1CADC346004AF16A /* PBXTargetDependency */,
-			);
-			name = ColorizeSwift_tvOSTests;
-			productName = ColorizeSwift_tvOSTests;
-			productReference = 900EE6471CADC346004AF16A /* ColorizeSwift_tvOSTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		900EE6631CADC539004AF16A /* ColorizeSwift_watchOS */ = {
 			isa = PBXNativeTarget;
@@ -355,14 +288,7 @@
 					900EE6121CADC2D9004AF16A = {
 						CreatedOnToolsVersion = 7.3;
 					};
-					900EE61B1CADC2D9004AF16A = {
-						CreatedOnToolsVersion = 7.3;
-					};
 					900EE63D1CADC346004AF16A = {
-						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = SGZ6FVQB6B;
-					};
-					900EE6461CADC346004AF16A = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = SGZ6FVQB6B;
 					};
@@ -387,9 +313,7 @@
 				900EE5EB1CADBEDB004AF16A /* ColorizeSwift_iOS */,
 				900EE5F51CADBEDB004AF16A /* ColorizeSwift_iOSTests */,
 				900EE6121CADC2D9004AF16A /* ColorizeSwift_OSX */,
-				900EE61B1CADC2D9004AF16A /* ColorizeSwift_OSXTests */,
 				900EE63D1CADC346004AF16A /* ColorizeSwift_tvOS */,
-				900EE6461CADC346004AF16A /* ColorizeSwift_tvOSTests */,
 				900EE6631CADC539004AF16A /* ColorizeSwift_watchOS */,
 			);
 		};
@@ -417,21 +341,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		900EE61A1CADC2D9004AF16A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		900EE63C1CADC346004AF16A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		900EE6451CADC346004AF16A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -452,9 +362,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				900EE6711CADC62C004AF16A /* ColorizeSwift_tvOSTests.swift in Sources */,
+				900EE6B81CAE4E9C004AF16A /* main.swift in Sources */,
 				900EE60B1CADBFC5004AF16A /* ColorizeSwift.swift in Sources */,
-				900EE6701CADC62C004AF16A /* ColorizeSwift_OSXTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,7 +371,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				900EE5FC1CADBEDB004AF16A /* ColorizeSwift_iOSTests.swift in Sources */,
+				900EE5FC1CADBEDB004AF16A /* ColorizeSwiftTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,25 +383,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		900EE6181CADC2D9004AF16A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		900EE6391CADC346004AF16A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				900EE6551CADC351004AF16A /* ColorizeSwift.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		900EE6431CADC346004AF16A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,16 +406,6 @@
 			isa = PBXTargetDependency;
 			target = 900EE5EB1CADBEDB004AF16A /* ColorizeSwift_iOS */;
 			targetProxy = 900EE5F81CADBEDB004AF16A /* PBXContainerItemProxy */;
-		};
-		900EE61F1CADC2D9004AF16A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 900EE6121CADC2D9004AF16A /* ColorizeSwift_OSX */;
-			targetProxy = 900EE61E1CADC2D9004AF16A /* PBXContainerItemProxy */;
-		};
-		900EE64A1CADC346004AF16A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 900EE63D1CADC346004AF16A /* ColorizeSwift_tvOS */;
-			targetProxy = 900EE6491CADC346004AF16A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -712,34 +597,6 @@
 			};
 			name = Release;
 		};
-		900EE6281CADC2D9004AF16A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = ColorizeSwift_OSXTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tynior.ColorizeSwift-OSXTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-			};
-			name = Debug;
-		};
-		900EE6291CADC2D9004AF16A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = ColorizeSwift_OSXTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tynior.ColorizeSwift-OSXTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-			};
-			name = Release;
-		};
 		900EE6501CADC346004AF16A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -775,30 +632,6 @@
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
-			};
-			name = Release;
-		};
-		900EE6531CADC346004AF16A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = ColorizeSwift_tvOSTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tynior.ColorizeSwift-tvOSTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = appletvos;
-				TVOS_DEPLOYMENT_TARGET = 9.2;
-			};
-			name = Debug;
-		};
-		900EE6541CADC346004AF16A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = ColorizeSwift_tvOSTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tynior.ColorizeSwift-tvOSTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = appletvos;
-				TVOS_DEPLOYMENT_TARGET = 9.2;
 			};
 			name = Release;
 		};
@@ -861,6 +694,7 @@
 				900EE6021CADBEDB004AF16A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		900EE6031CADBEDB004AF16A /* Build configuration list for PBXNativeTarget "ColorizeSwift_iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -869,6 +703,7 @@
 				900EE6051CADBEDB004AF16A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		900EE6241CADC2D9004AF16A /* Build configuration list for PBXNativeTarget "ColorizeSwift_OSX" */ = {
 			isa = XCConfigurationList;
@@ -877,14 +712,7 @@
 				900EE6261CADC2D9004AF16A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		900EE6271CADC2D9004AF16A /* Build configuration list for PBXNativeTarget "ColorizeSwift_OSXTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				900EE6281CADC2D9004AF16A /* Debug */,
-				900EE6291CADC2D9004AF16A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		900EE64F1CADC346004AF16A /* Build configuration list for PBXNativeTarget "ColorizeSwift_tvOS" */ = {
 			isa = XCConfigurationList;
@@ -893,14 +721,7 @@
 				900EE6511CADC346004AF16A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		900EE6521CADC346004AF16A /* Build configuration list for PBXNativeTarget "ColorizeSwift_tvOSTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				900EE6531CADC346004AF16A /* Debug */,
-				900EE6541CADC346004AF16A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		900EE6691CADC539004AF16A /* Build configuration list for PBXNativeTarget "ColorizeSwift_watchOS" */ = {
 			isa = XCConfigurationList;
@@ -909,6 +730,7 @@
 				900EE66B1CADC539004AF16A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
