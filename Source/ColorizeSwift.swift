@@ -12,48 +12,49 @@ public typealias TerminalStyleCode = (open: String, close: String)
 
 public struct TerminalStyle {
     
-    public static let bold: TerminalStyleCode            = ("\u{001B}[1m", "\u{001B}[0;0m")
-    public static let dim: TerminalStyleCode             = ("\u{001B}[2m", "\u{001B}[0;0m")
-    public static let italic: TerminalStyleCode          = ("\u{001B}[3m", "\u{001B}[0;0m")
-    public static let underline: TerminalStyleCode       = ("\u{001B}[4m", "\u{001B}[0;0m")
-    public static let blink: TerminalStyleCode           = ("\u{001B}[5m", "\u{001B}[0;0m")
-    public static let reverse: TerminalStyleCode         = ("\u{001B}[7m", "\u{001B}[0;0m")
-    public static let hidden: TerminalStyleCode          = ("\u{001B}[8m", "\u{001B}[0;0m")
-    public static let strikethrough: TerminalStyleCode   = ("\u{001B}[9m", "\u{001B}[0;0m")
+    public static let bold: TerminalStyleCode            = ("\u{001B}[1m", "\u{001B}[22m")
+    public static let dim: TerminalStyleCode             = ("\u{001B}[2m", "\u{001B}[22m")
+    public static let italic: TerminalStyleCode          = ("\u{001B}[3m", "\u{001B}[23m")
+    public static let underline: TerminalStyleCode       = ("\u{001B}[4m", "\u{001B}[24m")
+    public static let blink: TerminalStyleCode           = ("\u{001B}[5m", "\u{001B}[25m")
+    public static let reverse: TerminalStyleCode         = ("\u{001B}[7m", "\u{001B}[27m")
+    public static let hidden: TerminalStyleCode          = ("\u{001B}[8m", "\u{001B}[28m")
+    public static let strikethrough: TerminalStyleCode   = ("\u{001B}[9m", "\u{001B}[29m")
+    public static let reset: TerminalStyleCode           = ("\u{001B}[0m", "")
    
-    public static let black: TerminalStyleCode           = ("\u{001B}[30m", "\u{001B}[0;0m")
-    public static let red: TerminalStyleCode             = ("\u{001B}[31m", "\u{001B}[0;0m")
-    public static let green: TerminalStyleCode           = ("\u{001B}[32m", "\u{001B}[0;0m")
-    public static let yellow: TerminalStyleCode          = ("\u{001B}[33m", "\u{001B}[0;0m")
-    public static let blue: TerminalStyleCode            = ("\u{001B}[34m", "\u{001B}[0;0m")
-    public static let magenta: TerminalStyleCode         = ("\u{001B}[35m", "\u{001B}[0;0m")
-    public static let cyan: TerminalStyleCode            = ("\u{001B}[36m", "\u{001B}[0;0m")
-    public static let lightGray: TerminalStyleCode       = ("\u{001B}[37m", "\u{001B}[0;0m")
-    public static let darkGray: TerminalStyleCode        = ("\u{001B}[90m", "\u{001B}[0;0m")
-    public static let lightRed: TerminalStyleCode        = ("\u{001B}[91m", "\u{001B}[0;0m")
-    public static let lightGreen: TerminalStyleCode      = ("\u{001B}[92m", "\u{001B}[0;0m")
-    public static let lightYellow: TerminalStyleCode     = ("\u{001B}[93m", "\u{001B}[0;0m")
-    public static let lightBlue: TerminalStyleCode       = ("\u{001B}[94m", "\u{001B}[0;0m")
-    public static let lightMagenta: TerminalStyleCode    = ("\u{001B}[95m", "\u{001B}[0;0m")
-    public static let lightCyan: TerminalStyleCode       = ("\u{001B}[96m", "\u{001B}[0;0m")
-    public static let white: TerminalStyleCode           = ("\u{001B}[97m", "\u{001B}[0;0m")
+    public static let black: TerminalStyleCode           = ("\u{001B}[30m", "\u{001B}[0m")
+    public static let red: TerminalStyleCode             = ("\u{001B}[31m", "\u{001B}[0m")
+    public static let green: TerminalStyleCode           = ("\u{001B}[32m", "\u{001B}[0m")
+    public static let yellow: TerminalStyleCode          = ("\u{001B}[33m", "\u{001B}[0m")
+    public static let blue: TerminalStyleCode            = ("\u{001B}[34m", "\u{001B}[0m")
+    public static let magenta: TerminalStyleCode         = ("\u{001B}[35m", "\u{001B}[0m")
+    public static let cyan: TerminalStyleCode            = ("\u{001B}[36m", "\u{001B}[0m")
+    public static let lightGray: TerminalStyleCode       = ("\u{001B}[37m", "\u{001B}[0m")
+    public static let darkGray: TerminalStyleCode        = ("\u{001B}[90m", "\u{001B}[0m")
+    public static let lightRed: TerminalStyleCode        = ("\u{001B}[91m", "\u{001B}[0m")
+    public static let lightGreen: TerminalStyleCode      = ("\u{001B}[92m", "\u{001B}[0m")
+    public static let lightYellow: TerminalStyleCode     = ("\u{001B}[93m", "\u{001B}[0m")
+    public static let lightBlue: TerminalStyleCode       = ("\u{001B}[94m", "\u{001B}[0m")
+    public static let lightMagenta: TerminalStyleCode    = ("\u{001B}[95m", "\u{001B}[0m")
+    public static let lightCyan: TerminalStyleCode       = ("\u{001B}[96m", "\u{001B}[0m")
+    public static let white: TerminalStyleCode           = ("\u{001B}[97m", "\u{001B}[0m")
     
-    public static let onBlack: TerminalStyleCode         = ("\u{001B}[40m", "\u{001B}[0;0m")
-    public static let onRed: TerminalStyleCode           = ("\u{001B}[41m", "\u{001B}[0;0m")
-    public static let onGreen: TerminalStyleCode         = ("\u{001B}[42m", "\u{001B}[0;0m")
-    public static let onYellow: TerminalStyleCode        = ("\u{001B}[43m", "\u{001B}[0;0m")
-    public static let onBlue: TerminalStyleCode          = ("\u{001B}[44m", "\u{001B}[0;0m")
-    public static let onMagenta: TerminalStyleCode       = ("\u{001B}[45m", "\u{001B}[0;0m")
-    public static let onCyan: TerminalStyleCode          = ("\u{001B}[46m", "\u{001B}[0;0m")
-    public static let onLightGray: TerminalStyleCode     = ("\u{001B}[47m", "\u{001B}[0;0m")
-    public static let onDarkGray: TerminalStyleCode      = ("\u{001B}[100m", "\u{001B}[0;0m")
-    public static let onLightRed: TerminalStyleCode      = ("\u{001B}[101m", "\u{001B}[0;0m")
-    public static let onLightGreen: TerminalStyleCode    = ("\u{001B}[102m", "\u{001B}[0;0m")
-    public static let onLightYellow: TerminalStyleCode   = ("\u{001B}[103m", "\u{001B}[0;0m")
-    public static let onLightBlue: TerminalStyleCode     = ("\u{001B}[104m", "\u{001B}[0;0m")
-    public static let onLightMagenta: TerminalStyleCode  = ("\u{001B}[105m", "\u{001B}[0;0m")
-    public static let onLightCyan: TerminalStyleCode     = ("\u{001B}[106m", "\u{001B}[0;0m")
-    public static let onWhite: TerminalStyleCode         = ("\u{001B}[107m", "\u{001B}[0;0m")
+    public static let onBlack: TerminalStyleCode         = ("\u{001B}[40m", "\u{001B}[0m")
+    public static let onRed: TerminalStyleCode           = ("\u{001B}[41m", "\u{001B}[0m")
+    public static let onGreen: TerminalStyleCode         = ("\u{001B}[42m", "\u{001B}[0m")
+    public static let onYellow: TerminalStyleCode        = ("\u{001B}[43m", "\u{001B}[0m")
+    public static let onBlue: TerminalStyleCode          = ("\u{001B}[44m", "\u{001B}[0m")
+    public static let onMagenta: TerminalStyleCode       = ("\u{001B}[45m", "\u{001B}[0m")
+    public static let onCyan: TerminalStyleCode          = ("\u{001B}[46m", "\u{001B}[0m")
+    public static let onLightGray: TerminalStyleCode     = ("\u{001B}[47m", "\u{001B}[0m")
+    public static let onDarkGray: TerminalStyleCode      = ("\u{001B}[100m", "\u{001B}[0m")
+    public static let onLightRed: TerminalStyleCode      = ("\u{001B}[101m", "\u{001B}[0m")
+    public static let onLightGreen: TerminalStyleCode    = ("\u{001B}[102m", "\u{001B}[0m")
+    public static let onLightYellow: TerminalStyleCode   = ("\u{001B}[103m", "\u{001B}[0m")
+    public static let onLightBlue: TerminalStyleCode     = ("\u{001B}[104m", "\u{001B}[0m")
+    public static let onLightMagenta: TerminalStyleCode  = ("\u{001B}[105m", "\u{001B}[0m")
+    public static let onLightCyan: TerminalStyleCode     = ("\u{001B}[106m", "\u{001B}[0m")
+    public static let onWhite: TerminalStyleCode         = ("\u{001B}[107m", "\u{001B}[0m")
     
 }
 
@@ -92,7 +93,7 @@ extension String {
     }
     
     public func reset() -> String {
-        return  self + "\u{001B}[0;0m"
+        return  "\u{001B}[0m" + self
     }
     
     public func foregroundColor(color: TerminalColor) -> String {
@@ -108,9 +109,9 @@ extension String {
     }
     
     private func applyStyle(codeStyle: TerminalStyleCode) -> String {
-        let str = self.stringByReplacingOccurrencesOfString(codeStyle.close, withString: codeStyle.close + codeStyle.open)
+        let str = self.stringByReplacingOccurrencesOfString(TerminalStyle.reset.open, withString: TerminalStyle.reset.open + codeStyle.open)
         
-        return codeStyle.open + str + codeStyle.close
+        return codeStyle.open + str + TerminalStyle.reset.open
     }
     
 }
@@ -507,10 +508,10 @@ public enum TerminalColor: UInt8 {
     case Grey93
     
     public func foregroundStyleCode() -> TerminalStyleCode {
-        return ("\u{001B}[38;5;\(self.rawValue)m", "\u{001B}[0;0m")
+        return ("\u{001B}[38;5;\(self.rawValue)m", TerminalStyle.reset.open)
     }
     
     public func backgroundStyleCode() -> TerminalStyleCode {
-        return ("\u{001B}[48;5;\(self.rawValue)m", "\u{001B}[0;0m")
+        return ("\u{001B}[48;5;\(self.rawValue)m", TerminalStyle.reset.open)
     }
 }

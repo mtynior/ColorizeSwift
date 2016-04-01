@@ -5,7 +5,7 @@
 [![CocoaPods](https://img.shields.io/cocoapods/v/ColorizeSwift.svg)](https://cocoapods.org/pods/ColorizeSwift)
 [![Carthage](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
-Terminal string styling in Swift
+Terminal string styling for Swift.
 
 ## Requirements
 
@@ -95,11 +95,11 @@ print("strikethrough".strikethrough())
 print("Red".red())
 print("On yellow".onYellow())
 print("256 foreground".foregroundColor(.Orange1))
-print("226 backgroun".backgroundColor(.Orange1))
+print("226 background".backgroundColor(.Orange1))
 print("Awful combination".colorize(.Yellow, background: .Red))
     
 let nested = "with a blue substring".blue().underline()
-print("I am a green line \(nested) that becomes green again".green().bold())
+print("A bold, green line \(nested) that becomes bold and green again".green().bold())
 ```
 
 ## Styles
@@ -434,7 +434,7 @@ Sometimes you need only open code for a modifier. You can access them by `Termin
 
 ```swift
 TerminalStyle.bold.open // "\u{001B}[1m"
-TerminalStyle.bold.close  // "\u{001B}[0;0m"
+TerminalStyle.bold.close  // "\u{001B}[22m"
 ```
 
 For 256 colors use:

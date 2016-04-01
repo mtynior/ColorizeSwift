@@ -24,8 +24,8 @@ func printStyles() {
     print("226 background".backgroundColor(.Orange1))
     print("Awful combination".colorize(.Yellow, background: .Red))
     
-    let nested = "with a blue substring".blue().underline()
-    print("I am a green line \(nested) that becomes green again".green().bold())
+    let nested = "with a blue, underline substring".blue().underline()
+    print("A bold, green line \(nested) that becomes bold and green again".green().bold())
 }
 
 func printF1() {

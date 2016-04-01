@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
   s.name         = "ColorizeSwift"
   s.version      = "1.0.0"
-  s.summary      = "Terminal string styling in Swift"
+  s.summary      = "Terminal string styling for Swift"
 
   s.homepage     = "https://github.com/mtynior/ColorizeSwift"
   s.license      = "MIT"
