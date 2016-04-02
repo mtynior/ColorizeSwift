@@ -1,14 +1,14 @@
 Pod::Spec.new do |s|
 
   s.name         = "ColorizeSwift"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "Terminal string styling for Swift"
 
   s.homepage     = "https://github.com/mtynior/ColorizeSwift"
   s.license      = "MIT"
   
   s.author             = { "Michał Tynior" => "michal@tynior.com" }
-  s.social_media_url   = "http://twitter.com/cadious_"
+  s.social_media_url   = "http://twitter.com/mtynior"
 
   s.ios.deployment_target = '9.0'
   s.osx.deployment_target = '10.10'
