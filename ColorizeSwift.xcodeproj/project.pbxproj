@@ -38,9 +38,9 @@
 		900EE6071CADBFC5004AF16A /* ColorizeSwift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorizeSwift.h; sourceTree = "<group>"; };
 		900EE6081CADBFC5004AF16A /* ColorizeSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorizeSwift.swift; sourceTree = "<group>"; };
 		900EE6091CADBFC5004AF16A /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
-		900EE6131CADC2D9004AF16A /* ColorizeSwift_OSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ColorizeSwift_OSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		900EE6131CADC2D9004AF16A /* ColorizeSwift_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ColorizeSwift_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		900EE63E1CADC346004AF16A /* ColorizeSwift_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ColorizeSwift_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		900EE6591CADC4B6004AF16A /* Info-OSX.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-OSX.plist"; sourceTree = "<group>"; };
+		900EE6591CADC4B6004AF16A /* Info-macOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-macOS.plist"; sourceTree = "<group>"; };
 		900EE65A1CADC4B6004AF16A /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
 		900EE65B1CADC4B6004AF16A /* Info-watchOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-watchOS.plist"; sourceTree = "<group>"; };
 		900EE6641CADC539004AF16A /* ColorizeSwift_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ColorizeSwift_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,7 +104,7 @@
 			children = (
 				900EE5EC1CADBEDB004AF16A /* ColorizeSwift_iOS.framework */,
 				900EE5F61CADBEDB004AF16A /* ColorizeSwift_iOSTests.xctest */,
-				900EE6131CADC2D9004AF16A /* ColorizeSwift_OSX.framework */,
+				900EE6131CADC2D9004AF16A /* ColorizeSwift_macOS.framework */,
 				900EE63E1CADC346004AF16A /* ColorizeSwift_tvOS.framework */,
 				900EE6641CADC539004AF16A /* ColorizeSwift_watchOS.framework */,
 			);
@@ -123,7 +123,7 @@
 		900EE6061CADBFC5004AF16A /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				900EE6591CADC4B6004AF16A /* Info-OSX.plist */,
+				900EE6591CADC4B6004AF16A /* Info-macOS.plist */,
 				900EE65A1CADC4B6004AF16A /* Info-tvOS.plist */,
 				900EE65B1CADC4B6004AF16A /* Info-watchOS.plist */,
 				900EE6091CADBFC5004AF16A /* Info-iOS.plist */,
@@ -215,9 +215,9 @@
 			productReference = 900EE5F61CADBEDB004AF16A /* ColorizeSwift_iOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		900EE6121CADC2D9004AF16A /* ColorizeSwift_OSX */ = {
+		900EE6121CADC2D9004AF16A /* ColorizeSwift_macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 900EE6241CADC2D9004AF16A /* Build configuration list for PBXNativeTarget "ColorizeSwift_OSX" */;
+			buildConfigurationList = 900EE6241CADC2D9004AF16A /* Build configuration list for PBXNativeTarget "ColorizeSwift_macOS" */;
 			buildPhases = (
 				900EE60E1CADC2D9004AF16A /* Sources */,
 				900EE60F1CADC2D9004AF16A /* Frameworks */,
@@ -228,9 +228,9 @@
 			);
 			dependencies = (
 			);
-			name = ColorizeSwift_OSX;
+			name = ColorizeSwift_macOS;
 			productName = ColorizeSwift_OSX;
-			productReference = 900EE6131CADC2D9004AF16A /* ColorizeSwift_OSX.framework */;
+			productReference = 900EE6131CADC2D9004AF16A /* ColorizeSwift_macOS.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		900EE63D1CADC346004AF16A /* ColorizeSwift_tvOS */ = {
@@ -276,27 +276,33 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Michal Tynior";
 				TargetAttributes = {
 					900EE5EB1CADBEDB004AF16A = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = SGZ6FVQB6B;
+						DevelopmentTeam = 924FTKSN52;
+						DevelopmentTeamName = "Michal Tynior";
+						LastSwiftMigration = 0800;
 					};
 					900EE5F51CADBEDB004AF16A = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = SGZ6FVQB6B;
+						DevelopmentTeam = 924FTKSN52;
+						DevelopmentTeamName = "Michal Tynior";
+						LastSwiftMigration = 0800;
 					};
 					900EE6121CADC2D9004AF16A = {
 						CreatedOnToolsVersion = 7.3;
 					};
 					900EE63D1CADC346004AF16A = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = SGZ6FVQB6B;
+						DevelopmentTeam = 924FTKSN52;
+						DevelopmentTeamName = "Michal Tynior";
 					};
 					900EE6631CADC539004AF16A = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = SGZ6FVQB6B;
+						DevelopmentTeam = 924FTKSN52;
+						DevelopmentTeamName = "Michal Tynior";
 					};
 				};
 			};
@@ -314,7 +320,7 @@
 			targets = (
 				900EE5EB1CADBEDB004AF16A /* ColorizeSwift_iOS */,
 				900EE5F51CADBEDB004AF16A /* ColorizeSwift_iOSTests */,
-				900EE6121CADC2D9004AF16A /* ColorizeSwift_OSX */,
+				900EE6121CADC2D9004AF16A /* ColorizeSwift_macOS */,
 				900EE63D1CADC346004AF16A /* ColorizeSwift_tvOS */,
 				900EE6631CADC539004AF16A /* ColorizeSwift_watchOS */,
 			);
@@ -517,6 +523,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tynior.ColorizeSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -534,6 +541,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tynior.ColorizeSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -544,6 +553,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tynior.ColorizeSwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -554,6 +564,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tynior.ColorizeSwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -567,11 +579,11 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "$(SRCROOT)/Source/Info-OSX.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Info-macOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tynior.ColorizeSwift-OSX";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tynior.ColorizeSwift-macOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
@@ -588,14 +600,15 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "$(SRCROOT)/Source/Info-OSX.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Info-macOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tynior.ColorizeSwift-OSX";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tynior.ColorizeSwift-macOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
@@ -632,6 +645,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
@@ -672,6 +686,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
@@ -707,7 +722,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		900EE6241CADC2D9004AF16A /* Build configuration list for PBXNativeTarget "ColorizeSwift_OSX" */ = {
+		900EE6241CADC2D9004AF16A /* Build configuration list for PBXNativeTarget "ColorizeSwift_macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				900EE6251CADC2D9004AF16A /* Debug */,
