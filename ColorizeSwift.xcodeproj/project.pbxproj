@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		900EE5F71CADBEDB004AF16A /* ColorizeSwift_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 900EE5EC1CADBEDB004AF16A /* ColorizeSwift_iOS.framework */; };
+		900EE5F71CADBEDB004AF16A /* ColorizeSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 900EE5EC1CADBEDB004AF16A /* ColorizeSwift.framework */; };
 		900EE5FC1CADBEDB004AF16A /* ColorizeSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900EE5FB1CADBEDB004AF16A /* ColorizeSwiftTests.swift */; };
 		900EE60A1CADBFC5004AF16A /* ColorizeSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 900EE6071CADBFC5004AF16A /* ColorizeSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		900EE60B1CADBFC5004AF16A /* ColorizeSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900EE6081CADBFC5004AF16A /* ColorizeSwift.swift */; };
@@ -31,19 +31,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		900EE5EC1CADBEDB004AF16A /* ColorizeSwift_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ColorizeSwift_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		900EE5EC1CADBEDB004AF16A /* ColorizeSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ColorizeSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		900EE5F61CADBEDB004AF16A /* ColorizeSwift_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorizeSwift_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		900EE5FB1CADBEDB004AF16A /* ColorizeSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorizeSwiftTests.swift; sourceTree = "<group>"; };
 		900EE5FD1CADBEDB004AF16A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		900EE6071CADBFC5004AF16A /* ColorizeSwift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorizeSwift.h; sourceTree = "<group>"; };
 		900EE6081CADBFC5004AF16A /* ColorizeSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorizeSwift.swift; sourceTree = "<group>"; };
 		900EE6091CADBFC5004AF16A /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
-		900EE6131CADC2D9004AF16A /* ColorizeSwift_OSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ColorizeSwift_OSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		900EE63E1CADC346004AF16A /* ColorizeSwift_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ColorizeSwift_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		900EE6131CADC2D9004AF16A /* ColorizeSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ColorizeSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		900EE63E1CADC346004AF16A /* ColorizeSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ColorizeSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		900EE6591CADC4B6004AF16A /* Info-OSX.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-OSX.plist"; sourceTree = "<group>"; };
 		900EE65A1CADC4B6004AF16A /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
 		900EE65B1CADC4B6004AF16A /* Info-watchOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-watchOS.plist"; sourceTree = "<group>"; };
-		900EE6641CADC539004AF16A /* ColorizeSwift_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ColorizeSwift_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		900EE6641CADC539004AF16A /* ColorizeSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ColorizeSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		900EE6B71CAE4E9C004AF16A /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		900EE6B91CAE6886004AF16A /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -60,7 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				900EE5F71CADBEDB004AF16A /* ColorizeSwift_iOS.framework in Frameworks */,
+				900EE5F71CADBEDB004AF16A /* ColorizeSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,11 +102,11 @@
 		900EE5ED1CADBEDB004AF16A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				900EE5EC1CADBEDB004AF16A /* ColorizeSwift_iOS.framework */,
+				900EE5EC1CADBEDB004AF16A /* ColorizeSwift.framework */,
 				900EE5F61CADBEDB004AF16A /* ColorizeSwift_iOSTests.xctest */,
-				900EE6131CADC2D9004AF16A /* ColorizeSwift_OSX.framework */,
-				900EE63E1CADC346004AF16A /* ColorizeSwift_tvOS.framework */,
-				900EE6641CADC539004AF16A /* ColorizeSwift_watchOS.framework */,
+				900EE6131CADC2D9004AF16A /* ColorizeSwift.framework */,
+				900EE63E1CADC346004AF16A /* ColorizeSwift.framework */,
+				900EE6641CADC539004AF16A /* ColorizeSwift.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -194,7 +194,7 @@
 			);
 			name = ColorizeSwift_iOS;
 			productName = ColorizeSwift;
-			productReference = 900EE5EC1CADBEDB004AF16A /* ColorizeSwift_iOS.framework */;
+			productReference = 900EE5EC1CADBEDB004AF16A /* ColorizeSwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		900EE5F51CADBEDB004AF16A /* ColorizeSwift_iOSTests */ = {
@@ -230,7 +230,7 @@
 			);
 			name = ColorizeSwift_OSX;
 			productName = ColorizeSwift_OSX;
-			productReference = 900EE6131CADC2D9004AF16A /* ColorizeSwift_OSX.framework */;
+			productReference = 900EE6131CADC2D9004AF16A /* ColorizeSwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		900EE63D1CADC346004AF16A /* ColorizeSwift_tvOS */ = {
@@ -248,7 +248,7 @@
 			);
 			name = ColorizeSwift_tvOS;
 			productName = ColorizeSwift_tvOS;
-			productReference = 900EE63E1CADC346004AF16A /* ColorizeSwift_tvOS.framework */;
+			productReference = 900EE63E1CADC346004AF16A /* ColorizeSwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		900EE6631CADC539004AF16A /* ColorizeSwift_watchOS */ = {
@@ -266,7 +266,7 @@
 			);
 			name = ColorizeSwift_watchOS;
 			productName = ColorizeSwift_watchOS;
-			productReference = 900EE6641CADC539004AF16A /* ColorizeSwift_watchOS.framework */;
+			productReference = 900EE6641CADC539004AF16A /* ColorizeSwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -506,7 +506,7 @@
 		900EE6011CADBEDB004AF16A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -515,7 +515,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tynior.ColorizeSwift;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ColorizeSwift;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -523,7 +523,7 @@
 		900EE6021CADBEDB004AF16A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -532,7 +532,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tynior.ColorizeSwift;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ColorizeSwift;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -560,7 +560,7 @@
 		900EE6251CADC2D9004AF16A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -571,8 +571,8 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tynior.ColorizeSwift-OSX";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tynior.ColorizeSwift;
+				PRODUCT_NAME = ColorizeSwift;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
@@ -581,7 +581,7 @@
 		900EE6261CADC2D9004AF16A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -592,8 +592,8 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tynior.ColorizeSwift-OSX";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tynior.ColorizeSwift;
+				PRODUCT_NAME = ColorizeSwift;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
@@ -602,6 +602,7 @@
 		900EE6501CADC346004AF16A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -609,8 +610,8 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Source/Info-watchOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tynior.ColorizeSwift-tvOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tynior.ColorizeSwift;
+				PRODUCT_NAME = ColorizeSwift;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -621,6 +622,7 @@
 		900EE6511CADC346004AF16A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -628,8 +630,8 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Source/Info-watchOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tynior.ColorizeSwift-tvOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tynior.ColorizeSwift;
+				PRODUCT_NAME = ColorizeSwift;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -641,6 +643,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -648,8 +651,8 @@
 				INFOPLIST_FILE = "Source/Info-watchOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tynior.ColorizeSwift-watchOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tynior.ColorizeSwift;
+				PRODUCT_NAME = ColorizeSwift;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -661,6 +664,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -668,8 +672,8 @@
 				INFOPLIST_FILE = "Source/Info-watchOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tynior.ColorizeSwift-watchOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tynior.ColorizeSwift;
+				PRODUCT_NAME = ColorizeSwift;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
