@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "900EE6631CADC539004AF16A"
-               BuildableName = "ColorizeSwift_watchOS.framework"
+               BuildableName = "ColorizeSwift.framework"
                BlueprintName = "ColorizeSwift_watchOS"
                ReferencedContainer = "container:ColorizeSwift.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "900EE6631CADC539004AF16A"
-            BuildableName = "ColorizeSwift_watchOS.framework"
+            BuildableName = "ColorizeSwift.framework"
             BlueprintName = "ColorizeSwift_watchOS"
             ReferencedContainer = "container:ColorizeSwift.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "900EE6631CADC539004AF16A"
-            BuildableName = "ColorizeSwift_watchOS.framework"
+            BuildableName = "ColorizeSwift.framework"
             BlueprintName = "ColorizeSwift_watchOS"
             ReferencedContainer = "container:ColorizeSwift.xcodeproj">
          </BuildableReference>
