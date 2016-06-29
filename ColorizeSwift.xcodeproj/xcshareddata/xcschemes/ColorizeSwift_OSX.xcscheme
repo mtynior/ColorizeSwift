@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "900EE6121CADC2D9004AF16A"
-               BuildableName = "ColorizeSwift_OSX.framework"
+               BuildableName = "ColorizeSwift.framework"
                BlueprintName = "ColorizeSwift_OSX"
                ReferencedContainer = "container:ColorizeSwift.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "900EE6121CADC2D9004AF16A"
-            BuildableName = "ColorizeSwift_OSX.framework"
+            BuildableName = "ColorizeSwift.framework"
             BlueprintName = "ColorizeSwift_OSX"
             ReferencedContainer = "container:ColorizeSwift.xcodeproj">
          </BuildableReference>
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "900EE6121CADC2D9004AF16A"
-            BuildableName = "ColorizeSwift_OSX.framework"
+            BuildableName = "ColorizeSwift.framework"
             BlueprintName = "ColorizeSwift_OSX"
             ReferencedContainer = "container:ColorizeSwift.xcodeproj">
          </BuildableReference>
@@ -83,7 +83,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "900EE6121CADC2D9004AF16A"
-            BuildableName = "ColorizeSwift_OSX.framework"
+            BuildableName = "ColorizeSwift.framework"
             BlueprintName = "ColorizeSwift_OSX"
             ReferencedContainer = "container:ColorizeSwift.xcodeproj">
          </BuildableReference>
