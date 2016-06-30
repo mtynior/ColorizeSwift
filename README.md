@@ -14,7 +14,7 @@ Terminal string styling for Swift.
 
 ## Integration
 
-### To use `ColorizeSwift` with Swift 3, please check out the `Swift3` branch.
+### To use `ColorizeSwift` with Swift 3, please check the `Swift3` branch out.
 
 #### CocoaPods
 You can use [CocoaPods](http://cocoapods.org/) to install `ColorizeSwift` by adding it to your `Podfile`:
