@@ -187,3 +187,6 @@ TerminalColor.Red.backgroundStyleCode().open \\"\u{001B}[48;5;9m"
 ## License
 
 ColorizeSwift is released under the MIT license. See LICENSE for details.
+
+## Credits
+The logo icon is taken from [IconsPlace](http://www.iconsplace.com/white-icons/paint-brush-icon)
