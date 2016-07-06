@@ -170,7 +170,7 @@ You can access 256 colors by `TerminalColor` enumeration.
 ![256 Colors](Assets/256Colors.png)
 
 ## Escape codes
-Sometimes you need only open code for a modifier. You can access them by `TerminalStyle` enum:
+Sometimes you only need an open/a close code for a modifier. You can access them by `TerminalStyle` enum:
 
 ```swift
 TerminalStyle.bold.open // "\u{001B}[1m"
@@ -186,7 +186,7 @@ TerminalColor.Red.backgroundStyleCode().open \\"\u{001B}[48;5;9m"
 
 ## License
 
-ColorizeSwift is released under the MIT license. See LICENSE for details.
+ColorizeSwift is released under the MIT license. See [LICENSE](https://github.com/mtynior/ColorizeSwift/blob/master/LICENSE.md) for details.
 
 ## Credits
 The logo icon is taken from [IconsPlace](http://www.iconsplace.com/white-icons/paint-brush-icon)
