@@ -108,7 +108,7 @@ extension String {
         return applyStyle(foreground.foregroundStyleCode()).applyStyle(background.backgroundStyleCode())
     }
     
-    private func applyStyle(_ codeStyle: TerminalStyleCode) -> String {
+    fileprivate func applyStyle(_ codeStyle: TerminalStyleCode) -> String {
         let str = self.replacingOccurrences(of: TerminalStyle.reset.open, with: TerminalStyle.reset.open + codeStyle.open)
         
         return codeStyle.open + str + TerminalStyle.reset.open
