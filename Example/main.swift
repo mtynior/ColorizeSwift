@@ -121,11 +121,11 @@ func printInfo() {
     print("\n")
 }
 
-if Process.arguments.count != 2 {
+if CommandLine.arguments.count != 2 {
     printInfo()
 }
 else {
-    let argument = Process.arguments[1]
+    let argument = CommandLine.arguments[1]
 
     switch (argument.lowercased()) {
         case "styles": printStyles()
