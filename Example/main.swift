@@ -20,9 +20,9 @@ func printStyles() {
     print("strikethrough".strikethrough())
     print("Red".red())
     print("On yellow".onYellow())
-    print("256 foreground".foregroundColor(.Orange1))
-    print("226 background".backgroundColor(.Orange1))
-    print("Awful combination".colorize(.Yellow, background: .Red))
+    print("256 foreground".foregroundColor(.orange1))
+    print("226 background".backgroundColor(.orange1))
+    print("Awful combination".colorize(.yellow, background: .red))
     
     let nested = "with a blue, underline substring".blue().underline()
     print("A bold, green line \(nested) that becomes bold and green again".green().bold())
@@ -30,10 +30,10 @@ func printStyles() {
 
 func printF1() {
     
-    let car1 = TerminalColor.Green.foregroundStyleCode().open
-    let car2 = TerminalColor.Red.foregroundStyleCode().open
-    let car3 = TerminalColor.MediumPurple.foregroundStyleCode().open
-    let car4 = TerminalColor.Yellow1.foregroundStyleCode().open
+    let car1 = TerminalColor.green.foregroundStyleCode().open
+    let car2 = TerminalColor.red.foregroundStyleCode().open
+    let car3 = TerminalColor.mediumPurple.foregroundStyleCode().open
+    let car4 = TerminalColor.yellow1.foregroundStyleCode().open
     
     print("\n\n")
     print("██  ██  ██  ██  ██  ██  ██  ██  ██  ██".white())
@@ -65,12 +65,12 @@ func printPacman() {
     
     // inspired by https://github.com/jaykru/colorscripts
     
-    let pacmanColor = TerminalColor.Yellow.foregroundStyleCode().open
-    let blinkyColor = TerminalColor.Red.foregroundStyleCode().open
-    let pinkyColor = TerminalColor.Pink1.foregroundStyleCode().open
-    let inkyColor = TerminalColor.Blue.foregroundStyleCode().open
-    let clydeColor = TerminalColor.Gold1.foregroundStyleCode().open
-    let white = TerminalColor.White.foregroundStyleCode().open
+    let pacmanColor = TerminalColor.yellow.foregroundStyleCode().open
+    let blinkyColor = TerminalColor.red.foregroundStyleCode().open
+    let pinkyColor = TerminalColor.pink1.foregroundStyleCode().open
+    let inkyColor = TerminalColor.blue.foregroundStyleCode().open
+    let clydeColor = TerminalColor.gold1.foregroundStyleCode().open
+    let white = TerminalColor.white.foregroundStyleCode().open
     
     print("\n\n")
     print("\(pacmanColor)  ▄███████▄       \(blinkyColor)  ▄██████▄       \(pinkyColor)  ▄██████▄       \(inkyColor)  ▄██████▄       \(clydeColor)  ▄██████▄  ")
@@ -84,12 +84,12 @@ func printPacman() {
 
 func printMario() {
     
-    let red = TerminalColor.Red.foregroundStyleCode().open
-    let brown = TerminalColor.DarkRed.foregroundStyleCode().open
-    let skin = TerminalColor.SandyBrown.foregroundStyleCode().open
-    let eye = TerminalColor.Black.foregroundStyleCode().open
-    let trousers = TerminalColor.DeepSkyBlue4_2.foregroundStyleCode().open
-    let button = TerminalColor.Yellow.foregroundStyleCode().open
+    let red = TerminalColor.red.foregroundStyleCode().open
+    let brown = TerminalColor.darkRed.foregroundStyleCode().open
+    let skin = TerminalColor.sandyBrown.foregroundStyleCode().open
+    let eye = TerminalColor.black.foregroundStyleCode().open
+    let trousers = TerminalColor.deepSkyBlue4_2.foregroundStyleCode().open
+    let button = TerminalColor.yellow.foregroundStyleCode().open
     
     print("\n\n")
     print("\(red)    █████    ")
@@ -121,13 +121,13 @@ func printInfo() {
     print("\n")
 }
 
-if Process.arguments.count != 2 {
+if CommandLine.arguments.count != 2 {
     printInfo()
 }
 else {
-    let argument = Process.arguments[1]
+    let argument = CommandLine.arguments[1]
 
-    switch (argument.lowercaseString) {
+    switch (argument.lowercased()) {
         case "styles": printStyles()
         case "f1": printF1()
         case "pacman": printPacman()
