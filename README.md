@@ -1,6 +1,6 @@
 ![ColorizeSwift](Assets/logo.png)
 
-[![Swift 2.2](https://img.shields.io/badge/language-Swift-orange.svg?style=flat)](https://developer.apple.com/swift/)
+[![Swift 3.0](https://img.shields.io/badge/language-Swift-orange.svg?style=flat)](https://developer.apple.com/swift/)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/mtynior/ColorizeSwift/blob/master/LICENSE.md) 
 [![CocoaPods](https://img.shields.io/cocoapods/v/ColorizeSwift.svg)](https://cocoapods.org/pods/ColorizeSwift)
 [![Carthage](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
@@ -10,7 +10,7 @@ Terminal string styling for Swift.
 ## Requirements
 
 - iOS 9.0+ / Mac OS X 10.10+ / tvOS 9.0+ / watchOS 2.0+
-- Xcode 7.3+
+- Xcode 8.0+
 
 ## Integration
 
@@ -45,7 +45,7 @@ let package = Package(
     name: "MyApp",
     targets: [],
     dependencies: [
-        .Package(url: "https://github.com/mtynior/ColorizeSwift.git", versions: "1.0.0" ..< Version.max)
+        .Package(url: "https://github.com/mtynior/ColorizeSwift.git", majorVersion: 1)
     ]
 )
 ```
@@ -59,7 +59,7 @@ You can also manually add ColorizeSwift to you project:
 ## Example
 You can run sample application:
 
-1. Open Terminal and go to Example folder.
+1. Open Terminal and go to `Example` folder.
 2. Run `./build.sh` script to build sample application.
 3. Run `./example pacman` to launch sample.
 
@@ -163,12 +163,12 @@ You can also use 256 colors, but keep in mind that not all Terminal clients supp
 
 #### Available colors
 
-You can access 256 colors by `TerminalColor` enumeration.
+You can access 256 colors using `TerminalColor` enumeration.
 
 ![256 Colors](Assets/256Colors.png)
 
 ## Escape codes
-Sometimes you need only open code for a modifier. You can access them by `TerminalStyle` enum:
+Sometimes you need only open code for a modifier. You can access them using `TerminalStyle` enum:
 
 ```swift
 TerminalStyle.bold.open // "\u{001B}[1m"

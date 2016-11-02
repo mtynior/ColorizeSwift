@@ -1,13 +1,14 @@
 # Change Log
 
 #### 1.x Releases
+- `1.1.x` Releases - [1.1.0](#110)
 
-- `1.0.x` Releases - [1.0.0](#100) | [1.0.1](#101) | [1.0.2](#102) | [1.0.3](#103) | [1.X.X](#1XX)
+- `1.0.x` Releases - [1.0.0](#100) | [1.0.1](#101) | [1.0.2](#102) | [1.0.3](#103) 
 
 ---
 
-## [1.X.X](https://github.com/mtynior/ColorizeSwift/releases/tag/1.X.X)
-Released on 2016-XX-XX.
+## [1.1.0](https://github.com/mtynior/ColorizeSwift/releases/tag/1.1.0)
+Released on 2016-11-01.
 
 #### Updated
 - Source code to Swift 3.0	
