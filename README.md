@@ -182,6 +182,14 @@ TerminalColor.Red.foregroundStyleCode().open \\"\u{001B}[38;5;9m"
 TerminalColor.Red.backgroundStyleCode().open \\"\u{001B}[48;5;9m"
 ```
 
+## Disable with --no-color
+For your convenience, you can disable color without modifying any code, simply by passing the `--no-color` option in the command line:
+
+```
+$ ./example --no-color
+```
+
+
 ## License
 
 ColorizeSwift is released under the MIT license. See LICENSE for details.
