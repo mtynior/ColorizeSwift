@@ -8,7 +8,7 @@
 
 import Foundation
 
-fileprivate let colorEnabled = !CommandLine.arguments.contains("--no-color")
+fileprivate let noColorOption = CommandLine.arguments.contains("--no-color")
 
 public typealias TerminalStyleCode = (open: String, close: String)
 
@@ -61,6 +61,11 @@ public struct TerminalStyle {
 }
 
 extension String {
+
+    public static var enableColor = true
+    private var colorEnabled: Bool {
+        return !noColorOption && String.enableColor
+    }
     
     public func bold() -> String {
         return applyStyle(TerminalStyle.bold)
