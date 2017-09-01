@@ -8,6 +8,8 @@
 
 import Foundation
 
+fileprivate let colorEnabled = !CommandLine.arguments.contains("--no-color")
+
 public typealias TerminalStyleCode = (open: String, close: String)
 
 public struct TerminalStyle {
@@ -93,6 +95,7 @@ extension String {
     }
     
     public func reset() -> String {
+        guard colorEnabled else { return self }
         return  "\u{001B}[0m" + self
     }
     
@@ -109,6 +112,7 @@ extension String {
     }
     
     fileprivate func applyStyle(_ codeStyle: TerminalStyleCode) -> String {
+        guard colorEnabled else { return self }
         let str = self.replacingOccurrences(of: TerminalStyle.reset.open, with: TerminalStyle.reset.open + codeStyle.open)
         
         return codeStyle.open + str + TerminalStyle.reset.open
