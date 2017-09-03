@@ -182,15 +182,25 @@ TerminalColor.Red.foregroundStyleCode().open \\"\u{001B}[38;5;9m"
 TerminalColor.Red.backgroundStyleCode().open \\"\u{001B}[48;5;9m"
 ```
 
-## Disable with String.enableColor (or --no-color)
-For your (and your user's) convenience, you can disable color without modifying any code, simply by passing the `--no-color` option in the command line:
+## Disable
+
+Colorization can be disabled by setting String.isColorizationEnabled to false:
+
+```swift
+String.isColorizationEnabled = false
+```
+
+For your convenience (and your user's), you can also disable colorization without modifying any code, simply by passing an option (default: --no-color) to the command line:
 
 ```
 $ ./example --no-color
 ```
-or, it can be disabled by setting String.enableColor to false
+
+The option is customizable through String.noColorOption:
+
 ```swift
-String.enableColor = false
+String.noColorOption = "--no-color"
+String.noColorOption = nil // Disable the option
 ```
 
 

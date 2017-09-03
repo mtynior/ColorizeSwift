@@ -8,8 +8,6 @@
 
 import Foundation
 
-fileprivate let noColorOption = CommandLine.arguments.contains("--no-color")
-
 public typealias TerminalStyleCode = (open: String, close: String)
 
 public struct TerminalStyle {
@@ -62,10 +60,30 @@ public struct TerminalStyle {
 
 extension String {
 
-    public static var enableColor = true
-    private var colorEnabled: Bool {
-        return !noColorOption && String.enableColor
+	/// Enable/disable colorization
+	public static var isColorizationEnabled = true
+
+	/// Command line option disabling color
+	public static var noColorOption: String? = "--no-color" {
+		didSet {
+			String.isColorizationIgnored = isNoColorOptionPresent
+		}
+	}
+
+    fileprivate static var isColorizationIgnored: Bool = isNoColorOptionPresent
+    fileprivate static var isNoColorOptionPresent: Bool {
+        guard let option = noColorOption else { return false }
+        return CommandLine.arguments.contains(option)
     }
+
+	/// **Should be used internally**, instead of the static method
+    fileprivate var isColorizationEnabled: Bool {
+        return !String.isColorizationIgnored && String.isColorizationEnabled
+    }
+
+}
+
+extension String {
     
     public func bold() -> String {
         return applyStyle(TerminalStyle.bold)
@@ -100,7 +118,7 @@ extension String {
     }
     
     public func reset() -> String {
-        guard colorEnabled else { return self }
+        guard isColorizationEnabled else { return self }
         return  "\u{001B}[0m" + self
     }
     
@@ -117,7 +135,7 @@ extension String {
     }
     
     fileprivate func applyStyle(_ codeStyle: TerminalStyleCode) -> String {
-        guard colorEnabled else { return self }
+        guard isColorizationEnabled else { return self }
         let str = self.replacingOccurrences(of: TerminalStyle.reset.open, with: TerminalStyle.reset.open + codeStyle.open)
         
         return codeStyle.open + str + TerminalStyle.reset.open
