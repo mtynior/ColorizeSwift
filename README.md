@@ -195,6 +195,7 @@ String.isColorizationEnabled = !CommandLine.arguments.contains("--no-color")
 
 ## Credits
 
+- [Mike Smiley](https://github.com/msmiley)
 - [Theo Lubert](https://github.com/theo-lubert) 
 
 ## License
