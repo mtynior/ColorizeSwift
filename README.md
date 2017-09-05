@@ -182,6 +182,18 @@ TerminalColor.Red.foregroundStyleCode().open \\"\u{001B}[38;5;9m"
 TerminalColor.Red.backgroundStyleCode().open \\"\u{001B}[48;5;9m"
 ```
 
+## Disable
+
+Colorization can be disabled globally:
+
+```swift
+String.isColorizationEnabled = false // Default: true
+
+// For example, you can support a command line option (./example --no-color)
+String.isColorizationEnabled = !CommandLine.arguments.contains("--no-color")
+```
+
+
 ## License
 
 ColorizeSwift is released under the MIT license. See LICENSE for details.
