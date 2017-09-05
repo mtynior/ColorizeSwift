@@ -168,7 +168,7 @@ You can access 256 colors using `TerminalColor` enumeration.
 ![256 Colors](Assets/256Colors.png)
 
 ## Escape codes
-Sometimes you need only open code for a modifier. You can access them using `TerminalStyle` enum:
+Sometimes you only need the `open code` for a modifier. You can access them using `TerminalStyle` enum:
 
 ```swift
 TerminalStyle.bold.open // "\u{001B}[1m"
@@ -178,11 +178,11 @@ TerminalStyle.bold.close  // "\u{001B}[22m"
 For 256 colors use:
 
 ```swift
-TerminalColor.Red.foregroundStyleCode().open \\"\u{001B}[38;5;9m"
-TerminalColor.Red.backgroundStyleCode().open \\"\u{001B}[48;5;9m"
+TerminalColor.red.foregroundStyleCode().open \\"\u{001B}[38;5;9m"
+TerminalColor.red.backgroundStyleCode().open \\"\u{001B}[48;5;9m"
 ```
 
-## Disable
+## Disabling colorization
 
 Colorization can be disabled globally:
 
@@ -193,6 +193,9 @@ String.isColorizationEnabled = false // Default: true
 String.isColorizationEnabled = !CommandLine.arguments.contains("--no-color")
 ```
 
+## Credits
+
+- [Theo Lubert](https://github.com/theo-lubert) 
 
 ## License
 

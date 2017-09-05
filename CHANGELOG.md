@@ -1,11 +1,20 @@
 # Change Log
 
 #### 1.x Releases
+
+- `1.2.x` Releases - [1.2.0](#120)
+
 - `1.1.x` Releases - [1.1.0](#110)
 
 - `1.0.x` Releases - [1.0.0](#100) | [1.0.1](#101) | [1.0.2](#102) | [1.0.3](#103) 
 
 ---
+
+## [1.2.0](https://github.com/mtynior/ColorizeSwift/releases/tag/1.2.0)
+Released on 2017-09-05.
+
+#### Added
+- Ability to disable colorization with `String.isColorizationEnnabled`, thanks to @theo-lubert.
 
 ## [1.1.0](https://github.com/mtynior/ColorizeSwift/releases/tag/1.1.0)
 Released on 2016-11-01.
