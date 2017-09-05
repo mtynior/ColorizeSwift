@@ -184,23 +184,13 @@ TerminalColor.Red.backgroundStyleCode().open \\"\u{001B}[48;5;9m"
 
 ## Disable
 
-Colorization can be disabled:
+Colorization can be disabled globally:
 
 ```swift
-String.isColorizationEnabled = false
-```
+String.isColorizationEnabled = false // Default: true
 
-You can also disable colorization by passing an option (default: --no-color) to the command line:
-
-```
-$ ./example --no-color
-```
-
-The option is customizable:
-
-```swift
-String.noColorOption = "--no-color"
-String.noColorOption = nil // Disable the option
+// For example, you can support a command line option (./example --no-color)
+String.isColorizationEnabled = !CommandLine.arguments.contains("--no-color")
 ```
 
 

@@ -59,32 +59,10 @@ public struct TerminalStyle {
 }
 
 extension String {
-
-	/// Enable/disable colorization
-	public static var isColorizationEnabled = true
-
-	/// Command line option disabling color
-	public static var noColorOption: String? = "--no-color" {
-		didSet {
-			String.isColorizationIgnored = isNoColorOptionPresent
-		}
-	}
-
-    fileprivate static var isColorizationIgnored: Bool = isNoColorOptionPresent
-    fileprivate static var isNoColorOptionPresent: Bool {
-        guard let option = noColorOption else { return false }
-        return CommandLine.arguments.contains(option)
-    }
-
-	/// **Should be used internally**, instead of the static method
-    fileprivate var isColorizationEnabled: Bool {
-        return !String.isColorizationIgnored && String.isColorizationEnabled
-    }
-
-}
-
-extension String {
     
+    /// Enable/disable colorization
+    public static var isColorizationEnabled = true
+
     public func bold() -> String {
         return applyStyle(TerminalStyle.bold)
     }
@@ -118,7 +96,7 @@ extension String {
     }
     
     public func reset() -> String {
-        guard isColorizationEnabled else { return self }
+        guard String.isColorizationEnabled else { return self }
         return  "\u{001B}[0m" + self
     }
     
@@ -135,7 +113,7 @@ extension String {
     }
     
     fileprivate func applyStyle(_ codeStyle: TerminalStyleCode) -> String {
-        guard isColorizationEnabled else { return self }
+        guard String.isColorizationEnabled else { return self }
         let str = self.replacingOccurrences(of: TerminalStyle.reset.open, with: TerminalStyle.reset.open + codeStyle.open)
         
         return codeStyle.open + str + TerminalStyle.reset.open
