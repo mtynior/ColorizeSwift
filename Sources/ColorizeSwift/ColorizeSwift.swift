@@ -520,3 +520,4 @@ public enum TerminalColor: UInt8 {
         return ("\u{001B}[48;5;\(self.rawValue)m", TerminalStyle.reset.open)
     }
 }
+

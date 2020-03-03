@@ -1,20 +1,49 @@
 ![ColorizeSwift](Assets/logo.png)
 
-[![Swift 3.0](https://img.shields.io/badge/language-Swift-orange.svg?style=flat)](https://developer.apple.com/swift/)
+[![Swift](https://img.shields.io/badge/language-Swift-orange.svg?style=flat)](https://developer.apple.com/swift/)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/mtynior/ColorizeSwift/blob/master/LICENSE.md) 
-[![CocoaPods](https://img.shields.io/cocoapods/v/ColorizeSwift.svg)](https://cocoapods.org/pods/ColorizeSwift)
-[![Carthage](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 Terminal string styling for Swift.
 
-## Requirements
-
-- iOS 9.0+ / Mac OS X 10.10+ / tvOS 9.0+ / watchOS 2.0+
-- Xcode 8.0+
-
 ## Integration
 
+#### Swift Package Manager (SPM)
+You can use The [Swift Package Manager](https://swift.org/package-manager/) to install ColorizeSwift by adding it to your Package.swift file:
+
+```swift
+// swift-tools-version:4.0
+// The swift-tools-version declares the minimum version of Swift required to build this package.
+
+import PackageDescription
+
+let package = Package(
+    name: "MyLibrary",
+    products: [
+        .library(name: "MyLibrary", targets: ["MyLibrary"]),
+    ],
+    dependencies: [
+         .package(url: "https://github.com/mtynior/ColorizeSwift.git", from: "1.5.0"),
+    ],
+    targets: [
+        .target(name: "MyLibrary", dependencies: ["ColorizeSwift"]),
+        .testTarget(name: "MyLibraryTests", dependencies: ["MyLibrary", "ColorizeSwift"]),
+    ]
+)
+```
+
+#### Manually
+You can also manually add ColorizeSwift to you project:
+
+1. Download `ColorizeSwift.swift` file,
+2. Drag `ColorizeSwift.swift` into you project's tree.
+
+
 #### CocoaPods
+
+##### From version `1.5` Colorize does not support CocoaPods!
+Please user SPM or add  `ColorizeSwift.swift` file  manually to your project. 
+If you use CocoaPods, you can still use version `1.3`.  **At the moment, latest version 1.5 and 1.3 have the same functionality!**
+
 You can use [CocoaPods](http://cocoapods.org/) to install `ColorizeSwift` by adding it to your `Podfile`:
 
 ```ruby
@@ -27,34 +56,6 @@ end
 ```
 Run `pods install` to intagrate pods with your project.
 
-#### Carthage
-You can use [Carthage](https://github.com/Carthage/Carthage) to install `ColorizeSwift ` by adding it to your `Cartfile`:
-
-```
-github "mtynior/ColorizeSwift"
-```
-Run `carthage update` to build the framework and drag the built `ColorizeSwift.framework` into your Xcode project.
-
-#### Swift Package Managers (SPM)
-You can use The [Swift Package Manager](https://swift.org/package-manager/) to install ColorizeSwift by adding it to your Package.swift file:
-
-```swift
-import PackageDescription
-
-let package = Package(
-    name: "MyApp",
-    targets: [],
-    dependencies: [
-        .Package(url: "https://github.com/mtynior/ColorizeSwift.git", majorVersion: 1)
-    ]
-)
-```
-
-#### Manually
-You can also manually add ColorizeSwift to you project:
-
-1. Download `ColorizeSwift.swift` file,
-2. Drag `ColorizeSwift.swift` into you project's tree.
 
 ## Example
 You can run sample application:

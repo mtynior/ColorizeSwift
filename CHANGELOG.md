@@ -2,6 +2,8 @@
 
 #### 1.x Releases
 
+- `1.5.x` Releases - [1.5.0](#150)
+
 - `1.2.x` Releases - [1.2.0](#120)
 
 - `1.1.x` Releases - [1.1.0](#110)
@@ -9,6 +11,15 @@
 - `1.0.x` Releases - [1.0.0](#100) | [1.0.1](#101) | [1.0.2](#102) | [1.0.3](#103) 
 
 ---
+
+## [1.5.0](https://github.com/mtynior/ColorizeSwift/releases/tag/1.5.0)
+Released on 2020-03-03.
+
+#### Updated
+- Source code to Swift 5.0 and new Swift Package Manager    
+
+#### Removed
+Support for CocoaPods.
 
 ## [1.2.0](https://github.com/mtynior/ColorizeSwift/releases/tag/1.2.0)
 Released on 2017-09-05.
