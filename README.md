@@ -195,7 +195,7 @@ You can use this to support a command line option (`./example --no-color`):
 ```swift
 String.isColorizationEnabled = !CommandLine.arguments.contains("--no-color")
 ```
-or to disable colorization if the program is running in a pipe (`./example | wc`) or otherwise not writing to `stdout`  (`./example > output.txt`):
+To disable colorization when program is running in a pipe (`./example | wc`) or when not writing to `stdout` (`./example > output.txt`):
 ```swift
 String.isColorizationEnabled = (isatty(fileno(stdout)) == 1)
 ```
@@ -205,6 +205,7 @@ String.isColorizationEnabled = (isatty(fileno(stdout)) == 1)
 - [Mike Smiley](https://github.com/msmiley)
 - [Theo Lubert](https://github.com/theo-lubert) 
 - [Noah Bass](https://github.com/noahbass)
+- [Hristo Staykov](https://github.com/hristost)
 
 ## License
 
