@@ -183,6 +183,14 @@ TerminalColor.red.foregroundStyleCode().open \\"\u{001B}[38;5;9m"
 TerminalColor.red.backgroundStyleCode().open \\"\u{001B}[48;5;9m"
 ```
 
+## Uncolorize
+
+To get string without any colorization use `uncolorized()` method:
+```swift
+let styledString = "Awful combination".colorize(.yellow, background: .red) // \u{001B}[48;5;9m\u{001B}[38;5;11mAwful combination\u{001B}[0m\u{001B}[48;5;9m\u{001B}[0m
+let withoutStyles = styledString.uncolorized() // "Awful combination"
+```
+
 ## Disabling colorization
 
 Colorization can be disabled globally:
@@ -199,6 +207,7 @@ To disable colorization when program is running in a pipe (`./example | wc`) or 
 ```swift
 String.isColorizationEnabled = (isatty(fileno(stdout)) == 1)
 ```
+
 
 ## Credits
 

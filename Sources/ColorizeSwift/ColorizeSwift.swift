@@ -11,7 +11,6 @@ import Foundation
 public typealias TerminalStyleCode = (open: String, close: String)
 
 public struct TerminalStyle {
-    
     public static let bold: TerminalStyleCode            = ("\u{001B}[1m", "\u{001B}[22m")
     public static let dim: TerminalStyleCode             = ("\u{001B}[2m", "\u{001B}[22m")
     public static let italic: TerminalStyleCode          = ("\u{001B}[3m", "\u{001B}[23m")
@@ -55,11 +54,9 @@ public struct TerminalStyle {
     public static let onLightMagenta: TerminalStyleCode  = ("\u{001B}[105m", "\u{001B}[0m")
     public static let onLightCyan: TerminalStyleCode     = ("\u{001B}[106m", "\u{001B}[0m")
     public static let onWhite: TerminalStyleCode         = ("\u{001B}[107m", "\u{001B}[0m")
-    
 }
 
 extension String {
-    
     /// Enable/disable colorization
     public static var isColorizationEnabled = true
 
@@ -112,17 +109,21 @@ extension String {
         return applyStyle(foreground.foregroundStyleCode()).applyStyle(background.backgroundStyleCode())
     }
     
-    fileprivate func applyStyle(_ codeStyle: TerminalStyleCode) -> String {
+    public func uncolorized() -> String {
+        guard let regex = try? NSRegularExpression(pattern: "\\\u{001B}\\[([0-9;]+)m") else { return self }
+        
+        return regex.stringByReplacingMatches(in: self, options: [], range: NSRange(0..<self.count), withTemplate: "")
+    }
+    
+    private func applyStyle(_ codeStyle: TerminalStyleCode) -> String {
         guard String.isColorizationEnabled else { return self }
         let str = self.replacingOccurrences(of: TerminalStyle.reset.open, with: TerminalStyle.reset.open + codeStyle.open)
         
         return codeStyle.open + str + TerminalStyle.reset.open
     }
-    
 }
 
 extension String {
-    
     public func black() -> String {
         return applyStyle(TerminalStyle.black)
     }
@@ -520,4 +521,3 @@ public enum TerminalColor: UInt8 {
         return ("\u{001B}[48;5;\(self.rawValue)m", TerminalStyle.reset.open)
     }
 }
-

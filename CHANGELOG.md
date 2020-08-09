@@ -2,6 +2,8 @@
 
 #### 1.x Releases
 
+- `1.6.x` Releases - [1.6.0](#160)
+
 - `1.5.x` Releases - [1.5.0](#150)
 
 - `1.2.x` Releases - [1.2.0](#120)
@@ -11,6 +13,12 @@
 - `1.0.x` Releases - [1.0.0](#100) | [1.0.1](#101) | [1.0.2](#102) | [1.0.3](#103) 
 
 ---
+## [1.6.0](https://github.com/mtynior/ColorizeSwift/releases/tag/1.6.0)
+Released on 2020-08-09.
+
+#### Added
+- `uncolorized()`  method, which removes any colorization
+
 
 ## [1.5.0](https://github.com/mtynior/ColorizeSwift/releases/tag/1.5.0)
 Released on 2020-03-03.
