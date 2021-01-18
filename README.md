@@ -41,7 +41,7 @@ You can also manually add ColorizeSwift to you project:
 #### CocoaPods
 
 #### From version `1.5` ColorizeSwift does not support CocoaPods!
-Please user SPM or add `ColorizeSwift.swift` file  manually to your project. 
+Please use SPM or add `ColorizeSwift.swift` file  manually to your project. 
 If you use CocoaPods, you can still use version `1.2`.  **At the moment, latest version`1.5`, only removed support for CocoaPods and has the same functionality as `1.2`, but it might change in the future.** 
 
 You can use [CocoaPods](http://cocoapods.org/) to install `ColorizeSwift` by adding it to your `Podfile`:
