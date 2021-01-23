@@ -179,8 +179,8 @@ TerminalStyle.bold.close  // "\u{001B}[22m"
 For 256 colors use:
 
 ```swift
-TerminalColor.red.foregroundStyleCode().open \\"\u{001B}[38;5;9m"
-TerminalColor.red.backgroundStyleCode().open \\"\u{001B}[48;5;9m"
+TerminalColor.red.foregroundStyleCode().open //"\u{001B}[38;5;9m"
+TerminalColor.red.backgroundStyleCode().open //"\u{001B}[48;5;9m"
 ```
 
 ## Uncolorize
