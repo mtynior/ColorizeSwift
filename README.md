@@ -78,7 +78,7 @@ Available samples:
 
 	![Example - Pacman](Assets/pacman.png)
 
-4. `mario` - prints mario
+4. `mario` - prints Mario
 
 	![Example - Mario](Assets/mario.png)
 
