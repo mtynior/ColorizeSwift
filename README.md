@@ -54,7 +54,7 @@ target 'MyApp' do
 	pod 'ColorizeSwift'
 end
 ```
-Run `pods install` to intagrate pods with your project.
+Run `pods install` to integrate pods with your project.
 
 
 ## Example
