@@ -29,7 +29,6 @@ func printStyles() {
 }
 
 func printF1() {
-    
     let car1 = TerminalColor.green.foregroundStyleCode().open
     let car2 = TerminalColor.red.foregroundStyleCode().open
     let car3 = TerminalColor.mediumPurple.foregroundStyleCode().open
@@ -58,11 +57,9 @@ func printF1() {
     print(car3 + "     ▀  ▀          " + car4 + " ███▀████▀███ ")
     print(car3 + "                   " + car4 + "     ▀  ▀     ")
     print("\n\n")
-    
 }
 
 func printPacman() {
-    
     // inspired by https://github.com/jaykru/colorscripts
     
     let pacmanColor = TerminalColor.yellow.foregroundStyleCode().open
@@ -83,7 +80,6 @@ func printPacman() {
 }
 
 func printMario() {
-    
     let red = TerminalColor.red.foregroundStyleCode().open
     let brown = TerminalColor.darkRed.foregroundStyleCode().open
     let skin = TerminalColor.sandyBrown.foregroundStyleCode().open
@@ -109,7 +105,6 @@ func printMario() {
     print("\(brown)   ███    ███ ")
     print("\(brown)  ████    ████")
     print("\n\n")
-    
 }
 
 func printInfo() {
@@ -136,5 +131,4 @@ else {
             print("Unrecognized command `\(argument)`.")
             printInfo()
     }
-
 }
