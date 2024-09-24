@@ -58,7 +58,14 @@ public struct TerminalStyle {
 
 extension String {
     /// Enable/disable colorization
-    public static var isColorizationEnabled = true
+    public static var isColorizationEnabled: Bool {
+        get {
+            return StringColorizationManager.shared.isColorizationEnabled
+        }
+        set {
+            StringColorizationManager.shared.isColorizationEnabled = newValue
+        }
+    }
 
     public func bold() -> String {
         return applyStyle(TerminalStyle.bold)
@@ -93,7 +100,7 @@ extension String {
     }
     
     public func reset() -> String {
-        guard String.isColorizationEnabled else { return self }
+        guard StringColorizationManager.shared.isColorizationEnabled else { return self }
         return  "\u{001B}[0m" + self
     }
     
@@ -116,7 +123,7 @@ extension String {
     }
     
     private func applyStyle(_ codeStyle: TerminalStyleCode) -> String {
-        guard String.isColorizationEnabled else { return self }
+        guard StringColorizationManager.shared.isColorizationEnabled else { return self }
         let str = self.replacingOccurrences(of: TerminalStyle.reset.open, with: TerminalStyle.reset.open + codeStyle.open)
         
         return codeStyle.open + str + TerminalStyle.reset.open
@@ -519,5 +526,22 @@ public enum TerminalColor: UInt8 {
     
     public func backgroundStyleCode() -> TerminalStyleCode {
         return ("\u{001B}[48;5;\(self.rawValue)m", TerminalStyle.reset.open)
+    }
+}
+
+// MARK: - Colorization Manager
+internal final class StringColorizationManager: @unchecked Sendable {
+    internal static let shared = StringColorizationManager()
+    
+    private let queue = DispatchQueue(label: "com.github.mtynior.ColorizeSwift.StringColorizationManager")
+    private var _isColorizationEnabled = true
+    
+    internal var isColorizationEnabled: Bool {
+        get {
+            return queue.sync { _isColorizationEnabled }
+        }
+        set {
+            queue.sync { _isColorizationEnabled = newValue }
+        }
     }
 }
